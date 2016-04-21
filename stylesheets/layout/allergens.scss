@@ -1,0 +1,19 @@
+.allergen {
+	background: rgba(red, 0.6);
+	width: 30vw;
+	height: 30vw;
+	font-family: arial;
+	color: white;
+	border-radius: 4px;
+	margin: auto;	
+}
+
+$allergen-list: eggs peanuts shellfish strawberries tomatoes chocolate pollen cats;
+
+@each $allergen in $allergen-list { 
+	.#{$allergen} {
+		background-image: url('images/#{$allergen}.png');
+		background-repeat: no-repeat;
+		background-size: cover;
+	}
+}

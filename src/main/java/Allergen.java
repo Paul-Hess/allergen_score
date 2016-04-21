@@ -14,7 +14,6 @@ public class Allergen {
 		allergenWiki.put(64, "pollen");
 		allergenWiki.put(128, "cats");
 
-
 		while(score > 127) {
 			String cats = allergenWiki.get(128);
 			allergyList.add(cats);
@@ -43,6 +42,12 @@ public class Allergen {
 			String strawberries = allergenWiki.get(8);
 			allergyList.add(strawberries);
 			score-=8;
+		}
+
+		while(score > 3) {
+			String shellfish = allergenWiki.get(4);
+			allergyList.add(shellfish);
+			score-=4;
 		}
 
 		while(score > 1) {
