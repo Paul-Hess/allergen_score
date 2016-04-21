@@ -441,13 +441,12 @@ body {
   width: 1px; }
 
 .allergen {
-  background: rgba(255, 0, 0, 0.6);
+  color: rgba(255, 0, 0, 0.6);
   width: 30vw;
   height: 30vw;
   font-family: arial;
-  color: white;
   border-radius: 4px;
-  margin: auto; }
+  font-size: 1.6em; }
 
 .eggs {
   background-image: url("images/eggs.png");
@@ -488,5 +487,10 @@ body {
   background-image: url("images/cats.png");
   background-repeat: no-repeat;
   background-size: cover; }
+
+.allergy-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around; }
 
 /*# sourceMappingURL=app.css.map */

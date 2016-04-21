@@ -1,11 +1,10 @@
 .allergen {
-	background: rgba(red, 0.6);
+	color: rgba(red, 0.6);
 	width: 30vw;
 	height: 30vw;
 	font-family: arial;
-	color: white;
 	border-radius: 4px;
-	margin: auto;	
+	font-size: 1.6em;
 }
 
 $allergen-list: eggs peanuts shellfish strawberries tomatoes chocolate pollen cats;
@@ -16,4 +15,10 @@ $allergen-list: eggs peanuts shellfish strawberries tomatoes chocolate pollen ca
 		background-repeat: no-repeat;
 		background-size: cover;
 	}
+}
+
+.allergy-list {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
 }
